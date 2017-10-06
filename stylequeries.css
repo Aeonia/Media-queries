@@ -48,11 +48,9 @@ header {
     font-size: 12px;
     padding: 15px;
 }
-/* Téléphone: */
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (min-width: 768px) {
+
+
+@media only screen and (max-width: 768px) {
     /* Ordi: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -69,7 +67,7 @@ header {
     .row {background-color: black;}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     /* Tablette: */
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
@@ -83,4 +81,11 @@ header {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 300px) {
+/* Téléphone: */
+*{
+    width: 100%;
+    background-color: grey;
 }
